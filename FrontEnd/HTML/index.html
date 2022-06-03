@@ -1,51 +1,55 @@
 <!doctype html>
 <html>
     <head>
-        <title>
-            HTML Forms
-        </title>
+        <link rel="stylesheet" href="styles.css">
+        <title>Mario club</title>
     </head>
     <body>
        
-        <h1>HTML Forms</h1>
-        <form>
-            <label for="username">Enter Username</label>
-            <input type="text" id="username" name="username" placeholder="username" required>
-            <br><br>
-            <label for="email">Enter Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email" required>
-            <br><br>
-            <label for="password">Enter Password</label>
-            <input type="password" id="Password" name="password" placeholder="password" required>
-            <br><br>
-            <input type="radio" name="age" value="0-25" id="option1">
-            <label for="option1">0-25</label>
-            <input type="radio" name="age" value="26-50" id="option2">
-            <label for="option2">26-50</label>
-            <input type="radio" name="age" value="51+" id="option3">
-            <label for="option3">51+</label><br><br>
-
-            <label for="question">Security question</label>
-            <select name="question" id="question">
-                <option value="q1">What color are your favorite pair of socks?</option>
-                <option value="q2">If you could be a vegetable?</option>
-                <option value="q3">your question</option>
-            </select>
-
-            <br><br>
-
-            <label for="answer">Security question answer:</label>
-            <input type="text" id="answer" name="answer">
-            
-            <br><br>
-
-            <label for="bio">Enter your bio</label><br>
-            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
-
-            <br><br>
-            <label for="submit"></label>
-            <input type="submit" value="Submit the form button">
-        </form>
-
+        <header>
+            <h1>Mario Club</h1>
+        </header>
+       <section class="banner">
+            <img src="img/banner.png" alt="mario club welcome banner">
+            <div class="welcome">
+                <h2>Welcome to <br><span>Marioclub</span></h2>
+            </div>
+       </section>
+       <nav class="main-nav">
+           <ul>
+               <li><a href="/join.html" class="join">Join the Club</a></li>
+               <li><a href="/news.html">Latest News</a></li>
+               <li><a href="/games.html">New games</a></li>
+                <li><a href="/contac.html">Contact</a></li>
+           </ul>
+       </nav>
+       <main>
+           <article>
+               <h2>It`s a me, Mario</h2>
+               <p>Some text. And a little more text. Some text. 
+                   And a little more text. Some text. And a little 
+                   more text.Some text. And a little more text.Some 
+                   text. And a little more text.Some text. And a 
+                   little more text.Some text. And a little more 
+                   text.Some text. And a little more text.Some text. 
+                   And a little more text.</p>
+           </article>
+           <ul class="images">
+               <li><img src="img/thumb-1.png" alt="mario thumb1"></li>
+               <li><img src="img/thumb-2.png" alt="mario thumb2"></li>
+           </ul>
+       </main>
+       <section class="join">
+            <h2>Join today</h2>
+            <p>Some text. And a little more text. Some text. 
+                And a little more text. Some text. And a little 
+                more text.Some text. And a little more text.Some</p>
+            <form>
+                <input type="email" name="email" placeholder="Email" required>
+            </form>
+       </section>
+       <footer>
+           <p class="copyright">Copyright 2022 Marioclub</p>
+       </footer>
     </body>
 </html>
