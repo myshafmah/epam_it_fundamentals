@@ -2,38 +2,50 @@
 <html>
     <head>
         <title>
-            Learning HTML
+            HTML Forms
         </title>
     </head>
     <body>
-        <div>
-            <p>Hello, <strong>ninjas</strong> </p>
-            <p>My <small>first</small> <em>webpage!</em></p>
-            <a href="http://www.thenetninja.co.uk">the net ninja Website</a>
-            <br><a href="about.html">about page</a>
-        </div>
-        
-        <div>
-            <h1>heading 1</h1>
-            <h2>heading 2</h2>
-            <h3>heading 3</h3>
-            <h4>heading 4</h4>
-            <h5>Heading 5</h5>
-        </div>
+       
+        <h1>HTML Forms</h1>
+        <form>
+            <label for="username">Enter Username</label>
+            <input type="text" id="username" name="username" placeholder="username" required>
+            <br><br>
+            <label for="email">Enter Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <br><br>
+            <label for="password">Enter Password</label>
+            <input type="password" id="Password" name="password" placeholder="password" required>
+            <br><br>
+            <input type="radio" name="age" value="0-25" id="option1">
+            <label for="option1">0-25</label>
+            <input type="radio" name="age" value="26-50" id="option2">
+            <label for="option2">26-50</label>
+            <input type="radio" name="age" value="51+" id="option3">
+            <label for="option3">51+</label><br><br>
 
-        <div>
-            <ul>
-                <li>yoshi</li>
-                <li>luigi</li>
-                <li>toad</li>
-            </ul>
-        </div>
-        <span>I am a <br>span tag</span>
-        <hr>
-        <!-- <img src="img/7378e25afef9438086b3f581bdba7af7.jpg" alt="a pictire"> -->
-        <blockquote cite="http://www.oscarwildesite.com">
-            we are all in the gutter, but some of us are looking to the stars
-        </blockquote>
-        <p style="color: orange;">style me :)</p>
+            <label for="question">Security question</label>
+            <select name="question" id="question">
+                <option value="q1">What color are your favorite pair of socks?</option>
+                <option value="q2">If you could be a vegetable?</option>
+                <option value="q3">your question</option>
+            </select>
+
+            <br><br>
+
+            <label for="answer">Security question answer:</label>
+            <input type="text" id="answer" name="answer">
+            
+            <br><br>
+
+            <label for="bio">Enter your bio</label><br>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+
+            <br><br>
+            <label for="submit"></label>
+            <input type="submit" value="Submit the form button">
+        </form>
+
     </body>
 </html>
