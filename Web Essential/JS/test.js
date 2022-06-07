@@ -1,12 +1,8 @@
-function get_average(a,b){
-    var average=(a+b)/2;
-    return average;
-};
-
-var result = get_average(7,11);
-
-function log_result(){
-    console.log('avarage is '+result+ " inside function");
-}
-
-log_result();
+var a="7";
+var b=5;
+console.log(a+b);
+console.log(typeof(a+b));
+console.log(Math.round(7.3));
+console.log(Math.ceil(7.3));
+console.log(Math.max(7,4,9,8));
+console.log(Math.PI);
