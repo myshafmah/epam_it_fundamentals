@@ -1,8 +1,10 @@
-var youLikeMeat = false;
-var mynum = 10;
-
-if (youLikeMeat) {
-    document.write("expresion is true")
+var Age=29;
+if (Age>30){
+    document.write('you are over 30')
+}else if(Age>20){
+    document.write('you are over 20')
+}else if(Age>10){
+    document.write('you are over 10')
 }else{
-    document.write("Expresion not equal 10")
+    document.write('you are not over 10')
 }
