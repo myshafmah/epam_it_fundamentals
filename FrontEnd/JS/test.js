@@ -1,10 +1,11 @@
-var Age=29;
-if (Age>30){
-    document.write('you are over 30')
-}else if(Age>20){
-    document.write('you are over 20')
-}else if(Age>10){
-    document.write('you are over 10')
+var Age=31;
+// if (Age>=18 && Age <=30){
+//     document.write('true')
+// }else{
+//     document.write('false')
+// }
+if (Age<18 || Age >30){
+    document.write('true')
 }else{
-    document.write('you are not over 10')
+    document.write('false')
 }
