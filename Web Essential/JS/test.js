@@ -1,10 +1,18 @@
-var str="hello, world";
-var str2=str.slice(2,9);
-var str3=str.slice(2);
-var tags="meat, ha, salami, pork, beef, chicken";
-var tagsArray=tags.split(",");
+var arr = [];
+arr[0]=25;
+arr[1]=35;
+arr[2]=true;
+arr[3]="Hello";
+arr[2]=false;
+var arr2 = [10,20,"hi", false];
+var arr3= new Array();
+var arr4= new Array(4);
 
-console.log(str);
-console.log(str2);
-console.log(str3);
-console.log(tagsArray);
+
+console.log(arr);
+console.log(arr2);
+console.log(arr3);
+console.log(arr4);
+console.log(arr2.length);
+console.log(arr2.sort());
+console.log(arr2.reverse());
