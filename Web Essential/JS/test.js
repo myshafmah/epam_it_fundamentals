@@ -1,4 +1,5 @@
-var  content = document.getElementById("content");
+function setUpEvents(){
+    var  content = document.getElementById("content");
 var button = document.getElementById("show-more");
 
 button.onclick = function(){
@@ -9,4 +10,9 @@ button.onclick = function(){
         content.className = "open";
         button.innerHTML = "Show less";
     }
+};
+}
+
+window.onload = function(){
+  setUpEvents();
 };
